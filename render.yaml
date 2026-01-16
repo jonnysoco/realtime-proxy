@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: realtime-proxy
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false  # Set this manually in Render dashboard for security
+    plan: free  # Change to 'starter' ($7/mo) for always-on service
+    healthCheckPath: /  # Optional: health check endpoint
