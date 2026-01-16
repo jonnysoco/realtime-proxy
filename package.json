@@ -1,0 +1,13 @@
+{
+  "name": "openai-realtime-proxy",
+  "version": "1.0.0",
+  "description": "WebSocket proxy server for OpenAI Realtime API",
+  "main": "realtime-proxy-server.js",
+  "scripts": {
+    "start": "node realtime-proxy-server.js"
+  },
+  "dependencies": {
+    "ws": "^8.14.2",
+    "dotenv": "^16.3.1"
+  }
+}
